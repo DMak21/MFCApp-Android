@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "590083235227",
+    "firebase_url": "https://xbee-d18df.firebaseio.com",
+    "project_id": "xbee-d18df",
+    "storage_bucket": "xbee-d18df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590083235227:android:a702afc8075a1d7b",
+        "android_client_info": {
+          "package_name": "tk.dmak21.mfcapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590083235227-c7ss85fuev0f2vs671pajuseap9q76b7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqkcOwrxfDawoh3rUvlJ2pYE5NloOq-QY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
