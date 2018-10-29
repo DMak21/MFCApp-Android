@@ -35,6 +35,8 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.ViewHolder> {
         RvItem rvItem = rvItems.get(i);
 
         viewHolder.data.setText(rvItem.getData());
+        viewHolder.time.setText(rvItem.getTime());
+
     }
 
     @Override
@@ -45,11 +47,13 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder{
 
         public TextView data;
+        public TextView time;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            data = (TextView) itemView.findViewById(R.id.rv_item);
+            data = (TextView) itemView.findViewById(R.id.rv_item_data);
+            time = (TextView) itemView.findViewById(R.id.rv_item_time);
         }
     }
 }

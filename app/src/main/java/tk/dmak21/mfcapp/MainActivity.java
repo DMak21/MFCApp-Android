@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -39,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
         rv = (RecyclerView) findViewById(R.id.rv);
         rv.setHasFixedSize(true);
         rv.setLayoutManager(new LinearLayoutManager(this));
+        rv.setItemAnimator(new DefaultItemAnimator());
+        rv.addItemDecoration(new DividerItemDecoration(getApplicationContext(), LinearLayoutManager.VERTICAL));
+
 
         rvItems = new ArrayList<>();
 
