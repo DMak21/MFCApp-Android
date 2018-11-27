@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         rvItems = new ArrayList<>();
 
-        rvDbRef = FirebaseDatabase.getInstance().getReference("recyclerview");
+        rvDbRef = FirebaseDatabase.getInstance().getReference("log");
         rvDbRef.keepSynced(true);
 
         adapter = new RvAdapter(rvItems, this);
